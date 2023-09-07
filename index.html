@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Bootstrap.min.css" />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <style>
+      body {
+        font-family: "Outfit", sans-serif;
+        background: hsl(212, 45%, 89%);
+        padding: 0;
+        margin: 0;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      @media (min-width: 200px) and (max-width: 900px) {
+        .card-width {
+          width: 17rem;
+        }
+      }
+
+      @media (min-width: 910px) and (max-width: 4000px) {
+        .card-width {
+          width: 30rem;
+        }
+        .title {
+          font-size: 30px;
+        }
+
+        .text {
+          font-size: 25px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-xl position-relative text-center">
+      <div
+        class="card card-width position-fixed top-50 start-50 translate-middle rounded rounded-4 shadow p-2 p-lg-3"
+      >
+        <img
+          src="images/image-qr-code.png"
+          class="card-img-top img-fluid rounded-4"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title title fw-bolder py-2 py-lg-2">
+            Improve your front-end skills by building projects
+          </h5>
+          <p style="color: hsl(213, 10%, 59%)" class="card-text text pb-lg-4">
+            Scan the QR code to visit Frontend Mentor and take your coding
+            skills to the next level
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
